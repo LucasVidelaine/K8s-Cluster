@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
-
-kubeadm init --pod-network-cidr=10.244.0.0/16
+read -p 'CIDR longed for Kubernetes Cluster : ' cidr
+kubeadm init --pod-network-cidr=$cidr
 
 # By now the master node should be ready!
 mkdir -p $HOME/.kube
