@@ -49,7 +49,7 @@ You must have ssh access to all the nodes. You also need root :)
    
 2. Install the pre-requisites for starting the master.
    ```bash
-   sudo ./install-kubeadm.bash`
+   sudo ./install-kubeadm.bash
    ```
    
    This installs kubeadm, a supported version of docker and sets up the
